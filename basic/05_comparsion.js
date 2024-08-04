@@ -17,3 +17,5 @@ console.log(undefined == null); //true
  * == --> check for the value not its types.
  *
  */
+console.log(null == "\n0\n"); //false
+console.log(null === +"\n0\n"); //false

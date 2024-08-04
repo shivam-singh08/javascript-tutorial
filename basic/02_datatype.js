@@ -19,7 +19,8 @@
  * 
  * non-premitive type:
  * object
- * 
+ * array
+ * function
  */
 
 let isString = "javascript";
