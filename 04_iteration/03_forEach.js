@@ -1,5 +1,5 @@
 /**
- * for each -->
+ * for each --> 
  * 
  */
 
@@ -50,3 +50,12 @@ myCoding.forEach((item)=>{
     console.log(item.langName);
     
 })
+
+//for each does not return any value.
+
+const value = coding.forEach(function (item){
+    console.log(item); 
+    return item;
+})
+console.log(value); //undefined.
+
