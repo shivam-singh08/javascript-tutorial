@@ -22,9 +22,11 @@ myArr.push(6) //push at last index of array.
 console.log(myArr); // [0, 1, 2, 3, 4, 5, 6]
 
 myArr.pop() //remove the last ele from array
-
-myArr.unshift(8); //shift array insert element at zero index
-myArr.shift() //remove the element from the zero index.
+console.log(myArr); //[0, 1, 2, 3, 4, 5]
+console.log("unshift: ", myArr.unshift(8)) ;//shift array and insert element at zero index and return the new length of array.
+console.log(myArr); //[ 8, 0, 1, 2, 3, 4, 5 ]
+console.log("shift: ", myArr.shift()) //remove the element from the zero index.
+console.log(myArr); //[ 0, 1, 2, 3, 4, 5 ]
 
 console.log(myArr.includes(9)); //boolean value return
 console.log(myArr.indexOf(3)); //return index if exists else -1

@@ -7,17 +7,17 @@ const dc_heros = ['superhero', 'batman','flash'];
 //way to concate both array is either using concat or destructing using spread operator ...
 
 const allHeroConcat = marvel_heros.concat(dc_heros);
-console.log(allHeroConcat);
+console.log("concat: ", allHeroConcat);
 
 const allHeroDestruct = [...marvel_heros, ...dc_heros];
-console.log(allHeroDestruct);
+console.log("destruct: ", allHeroDestruct);
 
 const nestedArray = [1, 2, 3, [4, 5, 6], 7 ,[8 , 9 ,[10, 11]]] //nested array
 
 //change nestedArray to single array.
 
 const singleArr = nestedArray.flat(Infinity); //with flat we can make into single also we can define upto what depth we want to convert.Infinity denote all nested array into single array.
-console.log(singleArr);
+console.log("flat: ", singleArr);
 /**output
  * [
    1, 2, 3, 4,  5,

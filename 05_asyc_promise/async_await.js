@@ -9,7 +9,7 @@ const filePath = path.join(__dirname, '../05_asyc_promise/fileReading.txt');
 function shivamReadFile(){
     console.log('flow of promise inside fn shivamReadFile');
     
-    return new Promise(function(resolve){
+    let value = new Promise(function(resolve){
         console.log('inside the promise');
         
         fs.readFile(filePath,'utf-8',function(err,data){
@@ -18,11 +18,11 @@ function shivamReadFile(){
             resolve(data);
         });
     })
+    return value;
 }
 //callback function to call
-function onDone(data){
-    console.log(data);
-    
+ async function onDone(){
+    let resolveVal = await shivamReadFile();
+    console.log(resolveVal);
 }
-// console.log(shivamReadFile());
-shivamReadFile().then(onDone)
+onDone()
